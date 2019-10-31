@@ -5,10 +5,14 @@ const MAX = 0.99;
 
 const Amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
+Q = 0.25
+D = 0.10
+
+N = 0.5
+P = .01
+
 if (Number.isNaN(Amount)) {
-    // print your error message here
+    console.log ("Invalid")
 } else if (Amount < MIN || Amount > MAX) {
-    // print your error message here
+    console.log ("Invalid")
 } else {
-    // write your code for making change here
-}
