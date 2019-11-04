@@ -15,7 +15,6 @@ if (Number.isNaN(Amount)) {
 } else if (Amount < MIN || Amount > MAX) {
     console.log ("Invalid")
 } else {
-
   let Amount1 = Amount - Q*Quarter
   let Quarter = Math.floor(Amount/Q)
   let Amount2 = Amount - D*Dime
