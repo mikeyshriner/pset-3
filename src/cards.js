@@ -2,129 +2,129 @@ const readlineSync = require("readline-sync");
 
 const cardEntered = String(readlineSync.question("\nEnter a playing card: "));
 
-let ace = "\nAce"
-let king = "\nKing"
-let queen = "\nQueen"
-let jack = "\nJack"
-let ten = "\nTen"
-let nine = "\nNine"
-let eight = "\nEight"
-let seven = "\nSeven"
-let six = "\nSix"
-let five = "\nFive"
-let four = "\nFour"
-let three = "\nThree"
-let two = "\nTwo"
+let A = "\nAce"
+let K = "\nKing"
+let Q = "\nQueen"
+let J = "\nJack"
+let Tens = "\nTen"
+let Nines = "\nNine"
+let Eights = "\nEight"
+let Sevens = "\nSeven"
+let Sixes = "\nSix"
+let Fives = "\nFive"
+let Fours = "\nFour"
+let Threes= "\nThree"
+let Twos = "\nTwo"
 
-let spades = " of Spades.\n"
-let hearts = " of Hearts.\n"
-let diamonds = " of Diamonds.\n"
-let clubs = " of Clubs.\n"
+let S = " of Spades.\n"
+let H = " of Hearts.\n"
+let D = " of Diamonds.\n"
+let C = " of Clubs.\n"
 
 if (cardEntered == "AS" || cardEntered == "as"){
-    console.log(ace.concat(spades) + "")
+    console.log(A.concat(S) + "")
 } else if (cardEntered == "AH" || cardEntered == "ah"){
-    console.log(ace.concat(hearts) + "")
+    console.log(A.concat(H) + "")
 } else if (cardEntered == "AD" || cardEntered == "ad"){
-    console.log(ace.concat(diamonds) + "")
+    console.log(A.concat(D) + "")
 } else if (cardEntered == "AC" || cardEntered == "ac"){
-    console.log(ace.concat(clubs) + "")
+    console.log(A.concat(C) + "")
 } else if (cardEntered == "KS" || cardEntered == "ks"){
-    console.log(king.concat(spades) + "")
+    console.log(K.concat(S) + "")
 } else if (cardEntered == "KH" || cardEntered == "kh"){
-    console.log(king.concat(hearts) + "")
+    console.log(K.concat(H) + "")
 } else if (cardEntered == "KD" || cardEntered == "kd"){
-    console.log(king.concat(diamonds) + "")
+    console.log(K.concat(D) + "")
 } else if (cardEntered == "KC" || cardEntered == "kc"){
-    console.log(king.concat(clubs) + "")
+    console.log(K.concat(C) + "")
 } else if (cardEntered == "QS" || cardEntered == "qs"){
-    console.log(queen.concat(spades) + "")
+    console.log(Q.concat(S) + "")
 } else if (cardEntered == "QH" || cardEntered == "qh"){
-    console.log(queen.concat(hearts) + "")
+    console.log(Q.concat(H) + "")
 } else if (cardEntered == "QD" || cardEntered == "qd"){
-    console.log(queen.concat(diamonds) + "")
+    console.log(Q.concat(D) + "")
 } else if (cardEntered == "QC" || cardEntered == "qc"){
-    console.log(queen.concat(clubs) + "")
+    console.log(Q.concat(C) + "")
 } else if (cardEntered == "JS" || cardEntered == "js"){
-    console.log(jack.concat(spades) + "")
+    console.log(J.concat(S) + "")
 } else if (cardEntered == "JH" || cardEntered == "jh"){
-    console.log(jack.concat(hearts) + "")
+    console.log(J.concat(H) + "")
 } else if (cardEntered == "JD" || cardEntered == "jd"){
-    console.log(jack.concat(diamonds) + "")
+    console.log(J.concat(D) + "")
 } else if (cardEntered == "JC" || cardEntered == "jc"){
-    console.log(jack.concat(clubs) + "")
+    console.log(J.concat(C) + "")
 } else if (cardEntered == "TS" || cardEntered == "ts"){
-    console.log(ten.concat(spades) + "")
+    console.log(Tens.concat(S) + "")
 } else if (cardEntered == "TH" || cardEntered == "th"){
-    console.log(ten.concat(hearts) + "")
+    console.log(Tens.concat(H) + "")
 } else if (cardEntered == "TD" || cardEntered == "td"){
-    console.log(ten.concat(diamonds) + "")
+    console.log(Tens.concat(D) + "")
 } else if (cardEntered == "TC" || cardEntered == "tc"){
-    console.log(ten.concat(clubs) + "")
+    console.log(Tens.concat(C) + "")
 } else if (cardEntered == "9S" || cardEntered == "9s"){
-    console.log(nine.concat(spades) + "")
+    console.log(Nines.concat(S) + "")
 } else if (cardEntered == "9H" || cardEntered == "9h"){
-    console.log(nine.concat(hearts) + "")
+    console.log(Nines.concat(H) + "")
 } else if (cardEntered == "9D" || cardEntered == "9d"){
-    console.log(nine.concat(diamonds) + "")
+    console.log(Nines.concat(D) + "")
 } else if (cardEntered == "9C" || cardEntered == "9c"){
-    console.log(nine.concat(clubs) + "")
+    console.log(Nines.concat(C) + "")
 } else if (cardEntered == "8S" || cardEntered == "8s"){
-    console.log(eight.concat(spades) + "")
+    console.log(Eights.concat(S) + "")
 } else if (cardEntered == "8H" || cardEntered == "8h"){
-    console.log(eight.concat(hearts) + "")
+    console.log(Eights.concat(H) + "")
 } else if (cardEntered == "8D" || cardEntered == "8d"){
-    console.log(eight.concat(diamonds) + "")
+    console.log(Eights.concat(D) + "")
 } else if (cardEntered == "8C" || cardEntered == "8c"){
-    console.log(eight.concat(clubs) + "")
+    console.log(Eights.concat(C) + "")
 } else if (cardEntered == "7S" || cardEntered == "7s"){
-    console.log(seven.concat(spades) + "")
+    console.log(Sevens.concat(S) + "")
 } else if (cardEntered == "7H" || cardEntered == "7h"){
-    console.log(seven.concat(hearts) + "")
+    console.log(Sevens.concat(H) + "")
 } else if (cardEntered == "7D" || cardEntered == "7d"){
-    console.log(seven.concat(diamonds) + "")
+    console.log(Sevens.concat(D) + "")
 } else if (cardEntered == "7C" || cardEntered == "7c"){
-    console.log(seven.concat(clubs) + "")
+    console.log(Sevens.concat(C) + "")
 } else if (cardEntered == "6S" || cardEntered == "6s"){
-    console.log(six.concat(spades) + "")
+    console.log(Sixes.concat(S) + "")
 } else if (cardEntered == "6H" || cardEntered == "6h"){
-    console.log(six.concat(hearts) + "")
+    console.log(Sixes.concat(H) + "")
 } else if (cardEntered == "6D" || cardEntered == "6d"){
-    console.log(six.concat(diamonds) + "")
+    console.log(Sixes.concat(D) + "")
 } else if (cardEntered == "6C" || cardEntered == "6c"){
-    console.log(six.concat(clubs) + "")
+    console.log(Sixes.concat(C) + "")
 } else if (cardEntered == "5S" || cardEntered == "5s"){
-    console.log(five.concat(spades) + "")
+    console.log(Fives.concat(S) + "")
 } else if (cardEntered == "5H" || cardEntered == "5h"){
-    console.log(five.concat(hearts) + "")
+    console.log(Fives.concat(H) + "")
 } else if (cardEntered == "5D" || cardEntered == "5d"){
-    console.log(five.concat(diamonds) + "")
+    console.log(Fives.concat(D) + "")
 } else if (cardEntered == "5C" || cardEntered == "5c"){
-    console.log(five.concat(clubs) + "")
+    console.log(Fives.concat(C) + "")
 } else if (cardEntered == "4S" || cardEntered == "4s"){
-    console.log(four.concat(spades) + "")
+    console.log(Fours.concat(S) + "")
 } else if (cardEntered == "4H" || cardEntered == "4h"){
-    console.log(four.concat(hearts) + "")
+    console.log(Fours.concat(H) + "")
 } else if (cardEntered == "4D" || cardEntered == "4d"){
-    console.log(four.concat(diamonds) + "")
+    console.log(Fours.concat(D) + "")
 } else if (cardEntered == "4C" || cardEntered == "4c"){
-    console.log(four.concat(clubs) + "")
+    console.log(Fours.concat(C) + "")
 } else if (cardEntered == "3S" || cardEntered == "3s"){
-    console.log(three.concat(spades) + "")
+    console.log(three.concat(S) + "")
 } else if (cardEntered == "3H" || cardEntered == "3h"){
-    console.log(three.concat(hearts) + "")
+    console.log(three.concat(H) + "")
 } else if (cardEntered == "3D" || cardEntered == "3d"){
-    console.log(three.concat(diamonds) + "")
+    console.log(three.concat(D) + "")
 } else if (cardEntered == "3C" || cardEntered == "3c"){
-    console.log(three.concat(clubs) + "")
+    console.log(three.concat(C) + "")
 } else if (cardEntered == "2S" || cardEntered == "2s"){
-    console.log(two.concat(spades) + "")
+    console.log(Twos.concat(S) + "")
 } else if (cardEntered == "2H" || cardEntered == "2h"){
-    console.log(two.concat(hearts) + "")
+    console.log(Twos.concat(H) + "")
 } else if (cardEntered == "2D" || cardEntered == "2d"){
-    console.log(two.concat(diamonds) + "")
+    console.log(Twos.concat(D) + "")
 } else if (cardEntered == "2C" || cardEntered == "2c"){
-    console.log(two.concat(clubs) + "")
+    console.log(Twos.concat(C) + "")
 } else {
   console.log("\nInvalid\n")
 }
