@@ -3,25 +3,29 @@ const readlineSync = require("readline-sync");
 const MIN = 0.01;
 const MAX = 0.99;
 
-const Amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
-Q = 0.25
-D = 0.10
-N = 0.5
-P = .01
+const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
-if (Number.isNaN(Amount)) {
-    console.log ("Invalid")
-} else if (Amount < MIN || Amount > MAX) {
-    console.log ("Invalid")
+const Q = 0.25
+const D = 0.1
+const N = 0.05
+const P = 0.01
+
+
+
+if (Number.isNaN(amount)) {
+    console.log("Invalid");
+} else if (amount < MIN || amount > MAX) {
+    console.log("Invalid");
 } else {
-  let Amount1 = Amount - Q*Quarter
-  let Quarter = Math.floor(Amount/Q)
-  let Amount2 = Amount - D*Dime
-  let Dime = Math.floor(Amount2/D)
-  let Amount3 = Amount2 - N*Nickel
-  let Nickel = Math.floor(Amount3/N)
-  let Amount4 = Amount3 - P*Penny
-  let Penny = Math.floor(Amount4/P)
 
-console.log (Quarter + "quarters, " + Dime + "dimes, " + Nickel + "nickels, " + Penny + "pennies.");
+    let Quarters = Math.floor(amount/Q);
+    let amount1 = amount % Q;
+    let Dimes = Math.floor(amount1/D);
+    let amount2 = amount1 % D;
+    let Nickels = Math.floor(amount2/N);
+    let amount3 = amount2 % N;
+    let Pennies = Math.ceil(amount3/P);
+
+    console.log("\n" + Quarters + " quarters, " + Dimes + " dimes, " + Nickels + " nickels, and " + Pennies + " pennies.\n" );
+}

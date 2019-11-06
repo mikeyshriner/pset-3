@@ -1,25 +1,36 @@
 const readlineSync = require("readline-sync");
 
-const Grade = Number(readlineSync.question("\nEnter a grade: "));
+const letterGrade = Number(readlineSync.question("\nEnter a grade: "));
 
-const MIN = 0;
-const MAX = 100;
+const lowA = 90;
+const highA = 100;
+const lowB = 80;
+const highB = 89;
+const lowC = 70;
+const highC = 79
+const lowD = 60;
+const highD = 69;
+const lowF = 0;
+const highF = 59;
 
-if (Number.isNaN(Amount)) {
-    console.log ("Invalid")
-} else if (Grade < MIN || Grade > MAX) {
-    console.log ("Invalid")
+if (letterGrade > 100 || letterGrade < 0) {
+      console.log("\nInvalid\n")
 
+} else if (letterGrade >= lowA && letterGrade <= highA) {
+      console.log("\nYou received an A.\n")
 
+} else if (letterGrade >= lowB && letterGrade < lowA) {
+      console.log("\nYou received a B.\n")
 
-if (100 >= Grade >= 90) {
-    console.log("\nYou recieved an A.")
-} else if (90 > Grade >= 80) {
-    console.log("\nYou recieved a B.")
-} else if (80 > Grade >= 70 ) {
-    console.log("\nYou Recieved a C")
-} else if (70 > Grade >= 60 ) {
-    console.log("\nYou Recieved a D")
-} else if (60 > Grade >= 0 ) {
-    console.log("\nYou Recieved a F")
+} else if (letterGrade >= lowC && letterGrade < lowB) {
+      console.log("\nYou received a C.\n")
+
+} else if (letterGrade >= lowD && letterGrade < lowC) {
+      console.log("\nYou received a D.\n")
+
+} else if (letterGrade >= lowF && letterGrade < lowD) {
+      console.log("\nYou received an F.\n")
+
+} else {
+      console.log("\nInvalid.\n")
 }
