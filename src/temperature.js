@@ -11,7 +11,7 @@ if (theTemperature < (Number.MIN_SAFE_INTEGER) || theTemperature > Number.MAX_SA
 
 } else if ((theTemperature > 32 && theTemperature < 212) && (theScale == "F" || theScale == "f")){
       console.log("\nLiquid.\n")
-
+ 
 } else if (theTemperature >= 212 && (theScale == "F" || theScale == "f")){
       console.log("\nGas.\n")
 

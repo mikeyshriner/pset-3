@@ -13,7 +13,7 @@ if (number1, number2, number3 < (Number.MIN_SAFE_INTEGER) || number1, number2, n
 } else if (number1 > number2 && number2 > number3) {
       console.log("\nStrictly decreasing.\n")
 
-} else if (number1 < number2 && number2 < number3) {
+} else if (number1 < number2 && number2 < number3) { 
       console.log("\nStrictly increasing.\n")
 
 } else if (number1 >= number2 && number2 >= number3) {

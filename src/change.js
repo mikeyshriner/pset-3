@@ -6,7 +6,7 @@ const MAX = 0.99;
 
 const Amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
-const Q = 0.25
+const Q = 0.25 
 const D = 0.1
 const N = 0.05
 const P = 0.01

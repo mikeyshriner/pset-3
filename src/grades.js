@@ -8,9 +8,9 @@ if (letterGrade > 100 || letterGrade < 0) {
 } else if (letterGrade >= 90 && letterGrade <= 100) {
       console.log("\nYou received an A.\n")
 
-} else if (letterGrade >= 80 && letterGrade < 90) {
+} else if (letterGrade >= 80 && letterGrade < 90) { 
       console.log("\nYou received a B.\n")
- 
+
 } else if (letterGrade >= 70 && letterGrade < 80) {
       console.log("\nYou received a C.\n")
 

@@ -6,7 +6,7 @@ if (letterGrade == "A+" || letterGrade == "A" || letterGrade == "a+" || letterGr
       console.log("\nYour GPA is 4.00.\n")
 
 } else if  (letterGrade == "A-" || letterGrade == "a-") {
-      console.log("\nYour GPA is 3.67.\n")
+      console.log("\nYour GPA is 3.67.\n") 
 
 } else if  (letterGrade == "B+" || letterGrade == "b+") {
       console.log("\nYour GPA is 3.33.\n")

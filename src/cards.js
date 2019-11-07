@@ -4,7 +4,7 @@ const cardEntered = String(readlineSync.question("\nEnter a playing card: "));
 
 let A = "\nAce"
 let K = "\nKing"
-let Q = "\nQueen"
+let Q = "\nQueen" 
 let J = "\nJack"
 let Tens = "\nTen"
 let Nines = "\nNine"

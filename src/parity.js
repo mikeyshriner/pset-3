@@ -9,7 +9,7 @@ if (!Number.isInteger(Integer)) {
    console.log("\nInvalid.\n")
 
 } else if (Integer % 2 == 0) {
-   console.log("\nEven.\n")
+   console.log("\nEven.\n") 
 
 } else if (Integer % 2 == 1 || Integer % 2 == (-1)) {
    console.log("\nOdd.\n")

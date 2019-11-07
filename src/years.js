@@ -13,7 +13,7 @@ if (!Number.isInteger(theYear)) {
 
 } else if (theYear % 4 != 0) {
    console.log("\n" + theYear + " is not a leap year.\n")
-
+ 
 } else {
    console.log("\nInvalid.\n")
 }
